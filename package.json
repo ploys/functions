@@ -1,0 +1,39 @@
+{
+  "name": "@ploys/functions",
+  "description": "GitHub Apps on Azure Functions",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Daniel Balcomb <daniel.balcomb@gmail.com>",
+  "repository": "https://github.com/ploys/functions",
+  "homepage": "https://github.com/ploys/functions#readme",
+  "bugs": "https://github.com/ploys/functions/issues",
+  "license": "ISC",
+  "scripts": {
+    "setup": "lerna bootstrap --hoist",
+    "prune": "npm prune --production",
+    "build": "lerna run --parallel build",
+    "clean": "lerna run --parallel clean",
+    "start": "npm run build && func start",
+    "start:dev": "nodemon",
+    "lint": "eslint **/src/**/*.ts",
+    "lint:fix": "eslint **/src/**/*.ts --fix",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^3.0.0",
+    "eslint": "^7.1.0",
+    "eslint-plugin-github": "^4.0.0",
+    "eslint-plugin-jest": "^23.13.1",
+    "eslint-plugin-tsdoc": "^0.2.5",
+    "jest": "^26.0.1",
+    "lerna": "^3.22.0",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.0.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  },
+  "engines": {
+    "node": ">= 12.9.0"
+  }
+}
