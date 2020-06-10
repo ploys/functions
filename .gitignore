@@ -1,0 +1,11 @@
+coverage/
+dist/
+lib/
+node_modules/
+
+*/package-lock.json
+
+lerna-debug.log
+local.settings.json
+npm-debug.log
+tsbuild.json

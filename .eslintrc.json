@@ -1,0 +1,49 @@
+{
+  "root": true,
+  "overrides": [
+    {
+      "files": ["*/src/**/*.ts"],
+      "excludedFiles": ["**/*.test.ts", "**/*.spec.ts"],
+      "plugins": ["github", "eslint-plugin-tsdoc"],
+      "extends": ["plugin:github/recommended", "plugin:github/typescript"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaVersion": 2019,
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+      },
+      "rules": {
+        "no-console": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "import/no-namespace": "off",
+        "tsdoc/syntax": "warn"
+      },
+      "env": {
+        "node": true,
+        "es6": true
+      }
+    },
+    {
+      "files": ["*/tests/**/*.ts", "*/src/**/*.test.ts", "*/src/**/*.spec.ts"],
+      "plugins": ["jest", "github", "eslint-plugin-tsdoc"],
+      "extends": ["plugin:github/recommended", "plugin:github/typescript"],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaVersion": 2019,
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+      },
+      "rules": {
+        "no-console": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "import/no-namespace": "off",
+        "tsdoc/syntax": "warn"
+      },
+      "env": {
+        "node": true,
+        "es6": true,
+        "jest/globals": true
+      }
+    }
+  ]
+}

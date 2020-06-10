@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "setup",
+      "command": "npm run setup"
+    },
+    {
+      "type": "shell",
+      "label": "prune",
+      "command": "npm run prune"
+    },
+    {
+      "type": "shell",
+      "label": "build",
+      "command": "npm run build",
+      "dependsOn": "setup",
+      "problemMatcher": "$tsc"
+    },
+    {
+      "type": "func",
+      "label": "start",
+      "command": "host start",
+      "problemMatcher": "$func-watch",
+      "isBackground": true,
+      "dependsOn": "build"
+    }
+  ]
+}

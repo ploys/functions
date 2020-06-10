@@ -1,0 +1,9 @@
+{
+  "signal": "SIGINT",
+  "watch": ["**/src/**/*.ts"],
+  "delay": "2000",
+  "verbose": false,
+  "ext": "ts",
+  "ignore": ["**/*.spec.ts", "**/*.test.ts"],
+  "exec": "npm run start"
+}
