@@ -10,7 +10,6 @@
   "license": "ISC",
   "scripts": {
     "setup": "lerna bootstrap --hoist",
-    "prune": "npm prune --production",
     "build": "lerna run --parallel build",
     "clean": "lerna run --parallel clean",
     "start": "npm run build && func start",

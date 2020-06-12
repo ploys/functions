@@ -1,8 +1,7 @@
 {
   "azureFunctions.deploySubpath": ".",
-  "azureFunctions.postDeployTask": "setup",
   "azureFunctions.projectLanguage": "TypeScript",
   "azureFunctions.projectRuntime": "~3",
-  "azureFunctions.preDeployTask": "prune",
+  "azureFunctions.preDeployTask": "build",
   "debug.internalConsoleOptions": "neverOpen"
 }
