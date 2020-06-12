@@ -8,11 +8,6 @@
     },
     {
       "type": "shell",
-      "label": "prune",
-      "command": "npm run prune"
-    },
-    {
-      "type": "shell",
       "label": "build",
       "command": "npm run build",
       "dependsOn": "setup",

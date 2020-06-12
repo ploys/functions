@@ -5,7 +5,7 @@
       "type": "httpTrigger",
       "direction": "in",
       "authLevel": "function",
-      "methods": ["get", "post"]
+      "methods": ["post"]
     },
     {
       "name": "res",
@@ -13,5 +13,5 @@
       "direction": "out"
     }
   ],
-  "scriptFile": "./lib/index.js"
+  "scriptFile": "./dist/index.js"
 }

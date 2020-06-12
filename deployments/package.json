@@ -1,0 +1,30 @@
+{
+  "name": "@ploys/functions-deployments",
+  "version": "1.0.0",
+  "description": "Automated continuous deployment and delivery",
+  "author": "Daniel Balcomb <daniel.balcomb@gmail.com>",
+  "license": "ISC",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc --build tsconfig.build.json && ncc build lib/index.js -m -o dist",
+    "clean": "tsc --build tsconfig.build.json --clean"
+  },
+  "dependencies": {
+    "@ploys/deployments-core": "^0.1.0"
+  },
+  "devDependencies": {
+    "@azure/functions": "^1.2.2",
+    "@ploys/harness": "^0.1.0",
+    "@types/hapi__joi": "^17.1.0",
+    "@types/jest": "^25.2.3",
+    "@types/js-yaml": "^3.12.4",
+    "@types/node": "^14.0.5",
+    "@zeit/ncc": "^0.22.3",
+    "js-yaml": "^3.14.0"
+  }
+}
